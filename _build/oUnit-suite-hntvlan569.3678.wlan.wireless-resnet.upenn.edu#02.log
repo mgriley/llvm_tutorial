@@ -1,0 +1,18 @@
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 I: Start test suite:1:single num test.
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-58a96e-hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02.txt".
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 I: Expected: Number 3.4
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 I: Actual: Number 3.4
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 I: Test suite:1:single num test is successful.
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-58a96e-hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02.txt".
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 I: End test suite:1:single num test.
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 I: Start test suite:2:single def test.
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-dc479a-hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02.txt".
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 I: Expected: def
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 I: Actual: 
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 E: Test suite:2:single def test has failed.
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 E: expected: def but got:  in test suite:2:single def test.
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 E: Raised at file "src/oUnitAssert.ml", line 45, characters 8-27
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 E: 
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-dc479a-hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02.txt".
+2016-06-17T01:11:02+00:00 hntvlan569.3678.wlan.wireless-resnet.upenn.edu#02 I: End test suite:2:single def test.
