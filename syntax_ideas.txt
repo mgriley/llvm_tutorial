@@ -1,0 +1,79 @@
+Prototype examples
+Goal: make the function signature compact (makes anon functions more readable
+let mul = (a, b; int) a * b
+let mul = (a, b, int) a * b <- like this one the best
+let mul = (a, b -> int) a * b
+let mul = (a, b : int) a * b <- no, looks too much like you're specifying type of b
+
+Whole function self-contained in brackets (very useful for passing anon functions as function parameters
+let mul = (a, b, int ->
+  a * b
+)
+
+Switch parens with brackets to avoid confusion while passing as a param, if end up using parens to pass args
+let mul = {a, b, int -> a * b} <- the forwards arrow typically used to denote return type, use colon instead
+let mul = {a, b, int : a * b}
+apply_op (a, b, {a, b, int : a * b})
+vs.
+apply_op (a, b, (a, b, int : a * b))
+Similar to LISP function syntax, but without onion parentheses
+
+
+prototype: {int, int, int} <- could be confused with {int, int, int, void} !
+prototype: {int, int -> int}
+function: {a, b -> int : a + b}
+
+Get rid of the {} and use (), prototypes and arg passing should use same brackets type
+
+define: assert_equal = (('a -> string), 'a one, 'a two -> ())
+call : assert_equal (('a -> string : ha), one, two)
+
+Unionize!
+
+Return a parameterized union from functions with multiple cases
+Force the user to unwrap the value (thus handling all cases) when
+calling the function. However, let the first case be the 'assumed' case.
+No exceptions, use these cases instead.
+
+let read_line = (file -> char | EOF | Error string) ...
+
+Use the trust keyword to assume that the first case will occur,
+and don't need to handle the other cases
+Should make this more generalized, maybe. Able to specify the case to trust?
+char c = trust read_line my_file
+
+Case decomposition:
+For now, don't do sophisticated pattern matching, instead just match whole cases
+
+a)
+Should generalize the return mechanism to parameterized unions, maybe. Give the
+returned union a type (ret_func_name, func_name.ret...?). For example, should be
+able to explicitly decalre a union as below, and match case with the same syntax
+(again, first case is explicitly Default, unless given another name):
+Don't worry about typical unions for now though! (just focus on the function ones, they are far more important)
+
+my_union = char | EOF | Error string
+
+read_line file
+c: foo
+EOF: bar
+Error s: 
+  sad
+  nessy
+
+b)
+continuation passing -> pass in the anon functions to be executed in each case. 
+problem: many times the user will have to just declare the functions directly above read_line, 
+resulting in code like: eof_case = ... (but if he/she doesn't name it eof_ or alike, it could be unclear)
+
+read_line my_file (c, void) (void) (str, void)   
+
+Inline anon functions with named parameters to read_line (and void-less function signatures)
+read_line my_file
+def: (c) foo
+EOF: () bar 
+Error: (s) sad; nessy
+
+
+c) 
+

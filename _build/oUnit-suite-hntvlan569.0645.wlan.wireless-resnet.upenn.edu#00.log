@@ -1,0 +1,260 @@
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Runner: processes
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Chooser: simple
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration suite_name = "suite"
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration cache_filename = "/Users/matthewriley/llvm_tutorial/_build/oUnit-$(suite_name).cache"
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration display = "true"
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration results_style_1_X = "false"
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration verbose = "false"
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration health_check_interval = "1."
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration testdata_dir = "none"
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration chooser = "simple"
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration output_html_dir = "none"
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration processes_kill_period = "5."
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration runner = "processes"
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration shards = "2"
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration processes_grace_period = "5."
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration log_encoding = "utf-8"
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration output_junit_file = "none"
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Configuration output_file = "/Users/matthewriley/llvm_tutorial/_build/oUnit-$(suite_name)-$(shard_id).log"
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Using 2 workers maximum.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Starting worker number hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Worker hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 started.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Starting worker number hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Worker hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 started.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:1:single num test, suite:0:empty file test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Start test suite:0:empty file test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:1:single num test, suite:0:empty file test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Start test suite:1:single num test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:1:single num test, suite:0:empty file test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-4cb0cf-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:1:single num test, suite:0:empty file test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Expected: 
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:1:single num test, suite:0:empty file test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Actual: 
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:1:single num test, suite:0:empty file test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-2cd2de-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:1:single num test, suite:0:empty file test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Expected: Number 3.4
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:1:single num test, suite:0:empty file test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Actual: Number 3.4
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:1:single num test, suite:0:empty file test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Test suite:0:empty file test is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:1:single num test, suite:0:empty file test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-4cb0cf-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:1:single num test, suite:0:empty file test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: End test suite:0:empty file test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:1:single num test, suite:0:empty file test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:2:single def test, suite:1:single num test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Start test suite:2:single def test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:2:single def test, suite:1:single num test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Test suite:1:single num test is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:2:single def test, suite:1:single num test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-b3712e-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:2:single def test, suite:1:single num test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-2cd2de-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Expected: def
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:2:single def test, suite:1:single num test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: End test suite:1:single num test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Actual: def
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:2:single def test, suite:1:single num test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:3:single extern test, suite:2:single def test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Test suite:2:single def test is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:3:single extern test, suite:2:single def test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Start test suite:3:single extern test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:3:single extern test, suite:2:single def test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-b3712e-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-6f6a3f-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:3:single extern test, suite:2:single def test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: End test suite:2:single def test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Expected: extern
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:3:single extern test, suite:2:single def test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Actual: extern
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:4:single ident test, suite:3:single extern test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Test suite:3:single extern test is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Start test suite:4:single ident test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:4:single ident test, suite:3:single extern test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-6f6a3f-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:4:single ident test, suite:3:single extern test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: End test suite:3:single extern test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-5dc3ec-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:4:single ident test, suite:3:single extern test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Expected: Ident foo
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:5:single keyword test, suite:4:single ident test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Actual: Ident foo
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:5:single keyword test, suite:4:single ident test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Test suite:4:single ident test is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:5:single keyword test, suite:4:single ident test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-5dc3ec-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:5:single keyword test, suite:4:single ident test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: End test suite:4:single ident test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:5:single keyword test, suite:4:single ident test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:6:ignore comment line, suite:5:single keyword test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Start test suite:5:single keyword test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Start test suite:6:ignore comment line.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:6:ignore comment line, suite:5:single keyword test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-6cf3d3-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-01e027-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:6:ignore comment line, suite:5:single keyword test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Expected: Other token (
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Expected: def
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:6:ignore comment line, suite:5:single keyword test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Actual: Other token (
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Actual: def
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:6:ignore comment line, suite:5:single keyword test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Test suite:5:single keyword test is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Test suite:6:ignore comment line is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:6:ignore comment line, suite:5:single keyword test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-6cf3d3-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-01e027-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:6:ignore comment line, suite:5:single keyword test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: End test suite:5:single keyword test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: End test suite:6:ignore comment line.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:6:ignore comment line, suite:5:single keyword test.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:8:ident in parens, suite:7:num ending in zero.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Start test suite:7:num ending in zero.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Start test suite:8:ident in parens.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:8:ident in parens, suite:7:num ending in zero.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-7a1be7-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-da6c64-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:8:ident in parens, suite:7:num ending in zero.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Expected: Number 3.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Expected: Other token (Ident fooOther token )
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:8:ident in parens, suite:7:num ending in zero.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Actual: Number 3.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Actual: Other token (Ident fooOther token )
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:8:ident in parens, suite:7:num ending in zero.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Test suite:7:num ending in zero is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Test suite:8:ident in parens is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:8:ident in parens, suite:7:num ending in zero.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-7a1be7-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:8:ident in parens, suite:7:num ending in zero.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: End test suite:7:num ending in zero.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:8:ident in parens, suite:7:num ending in zero.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:9:number in parens, suite:8:ident in parens.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Start test suite:9:number in parens.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:9:number in parens, suite:8:ident in parens.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-da6c64-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-b584c4-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:9:number in parens, suite:8:ident in parens.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: End test suite:8:ident in parens.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Expected: Other token (Number 2.Other token )
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:9:number in parens, suite:8:ident in parens.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Actual: Other token (Number 2.Other token )
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:10:ident with trailing num, suite:9:number in parens.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Test suite:9:number in parens is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:10:ident with trailing num, suite:9:number in parens.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-b584c4-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:10:ident with trailing num, suite:9:number in parens.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: End test suite:9:number in parens.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:10:ident with trailing num, suite:9:number in parens.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:11:ident with leading num, suite:10:ident with trailing num.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Start test suite:10:ident with trailing num.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Start test suite:11:ident with leading num.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:11:ident with leading num, suite:10:ident with trailing num.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-2fbc4c-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-508998-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:11:ident with leading num, suite:10:ident with trailing num.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Expected: Ident abc1
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Expected: Number 2.Ident chainz
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:11:ident with leading num, suite:10:ident with trailing num.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Actual: Ident abc1
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Actual: Number 2.Ident chainz
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:11:ident with leading num, suite:10:ident with trailing num.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Test suite:10:ident with trailing num is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Test suite:11:ident with leading num is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:11:ident with leading num, suite:10:ident with trailing num.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-2fbc4c-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:11:ident with leading num, suite:10:ident with trailing num.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: End test suite:10:ident with trailing num.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:11:ident with leading num, suite:10:ident with trailing num.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:12:test string of proto helper, suite:11:ident with leading num.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-508998-hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.txt".
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Start test suite:12:test string of proto helper.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:12:test string of proto helper, suite:11:ident with leading num.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: End test suite:11:ident with leading num.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Expected: name: foo, args: a b 
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:12:test string of proto helper, suite:11:ident with leading num.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Actual: name: foo, args: a b 
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:13:parse proto no args, suite:12:test string of proto helper.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Test suite:12:test string of proto helper is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:13:parse proto no args, suite:12:test string of proto helper.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: End test suite:12:test string of proto helper.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:13:parse proto no args, suite:12:test string of proto helper.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:14:parse proto one arg, suite:13:parse proto no args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Start test suite:14:parse proto one arg.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:14:parse proto one arg, suite:13:parse proto no args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Start test suite:13:parse proto no args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Expected: name: sq, args: my_var 
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:14:parse proto one arg, suite:13:parse proto no args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Expected: name: sq, args: 
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Actual: name: sq, args: my_var 
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:14:parse proto one arg, suite:13:parse proto no args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Actual: name: sq, args: 
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Expected: Ident foo
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:14:parse proto one arg, suite:13:parse proto no args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Expected: Ident foo
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Actual: Ident foo
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:14:parse proto one arg, suite:13:parse proto no args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Actual: Ident foo
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:14:parse proto one arg, suite:13:parse proto no args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Test suite:14:parse proto one arg is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:14:parse proto one arg, suite:13:parse proto no args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: Test suite:13:parse proto no args is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: End test suite:14:parse proto one arg.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:14:parse proto one arg, suite:13:parse proto no args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 I: End test suite:13:parse proto no args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Still 2 tests running : suite:15:parse proto multi args, suite:13:parse proto no args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 2 tests running: suite:15:parse proto multi args, suite:13:parse proto no args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Start test suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Still 1 tests running : suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 1 tests running: suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Expected: name: sq, args: a b 
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Still 1 tests running : suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 1 tests running: suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Actual: name: sq, args: a b 
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Still 1 tests running : suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 1 tests running: suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Expected: Ident foo
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Still 1 tests running : suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 1 tests running: suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Actual: Ident foo
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Still 1 tests running : suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 1 tests running: suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: Test suite:15:parse proto multi args is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Still 1 tests running : suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 1 tests running: suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 I: End test suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Still 1 tests running : suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 1 tests running: suite:15:parse proto multi args.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: 0 tests running: .
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Worker hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01 has ended.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Worker hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02 has ended.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Used 2 worker during test execution.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Run 8 tests with shard hntvlan569.0645.wlan.wireless-resnet.upenn.edu#01.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Run 8 tests with shard hntvlan569.0645.wlan.wireless-resnet.upenn.edu#02.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: ==============
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Summary:
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:15:parse proto multi args is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:13:parse proto no args is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:14:parse proto one arg is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:12:test string of proto helper is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:11:ident with leading num is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:10:ident with trailing num is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:9:number in parens is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:8:ident in parens is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:7:num ending in zero is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:6:ignore comment line is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:5:single keyword test is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:4:single ident test is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:3:single extern test is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:2:single def test is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:1:single num test is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Test suite:0:empty file test is successful.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Ran: 16 tests in: 0.14 seconds.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Cases: 16.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Tried: 16.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Errors: 0.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Failures: 0.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Skip: 0.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Todo: 0.
+2016-06-26T02:05:54+00:00 hntvlan569.0645.wlan.wireless-resnet.upenn.edu#00 I: Timeout: 0.

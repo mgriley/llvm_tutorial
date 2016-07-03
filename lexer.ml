@@ -64,7 +64,7 @@ let rec parse_num (file_chars : char list) (num_str: string) : (token * char lis
 
     (* read chars until the first invalid num char is found *)
     match file_chars with
-    | [] -> 
+    | [] ->
         (Number (get_num num_str), file_chars)
     | next_char :: tl -> 
         if is_valid_num_char next_char then
@@ -111,6 +111,11 @@ let rec parse (file_chars: char list) (tokens: token list) : token list =
         ) 
 ;;
 
+(* print all tokens, for debugging *)
+let print_tokens (tokens : token list) : unit =
+    List.iter (fun a -> print_endline (string_of_token a)) tokens
+;; 
+
 (* read all of the characters of the input file *)
 let read_all_chars (file : in_channel) : char list = 
     let rec reader_helper (acc : char list) : char list = 
@@ -123,16 +128,22 @@ let read_all_chars (file : in_channel) : char list =
     Batteries.List.rev (reader_helper [])
 ;;
 
-(* print all tokens, for debugging *)
-let print_tokens (tokens : token list) : unit =
-    List.iter (fun a -> print_endline (string_of_token a)) tokens
-;; 
-
 (* Open the src file *)
-let tokenize_file (file_name : string) : token list =
-    let file: in_channel = open_in file_name in
-    let all_chars : char list = read_all_chars file in
-    close_in file;
+let tokenize_channel (channel : in_channel) : token list =
+    let all_chars : char list = read_all_chars channel in
+    close_in channel;
     let tokens: token list = Batteries.List.rev (parse all_chars []) in
     tokens
 ;;
+
+let tokenize_file (file_name : string) : token list =
+  let channel = open_in file_name in
+  let tokens = tokenize_channel channel in
+  close_in channel;
+  tokens
+
+(* For the toplevel *)
+let tokenize_string (input : string) : token list =
+  let all_chars = Batteries.String.to_list input in
+  let tokens: token list = Batteries.List.rev (parse all_chars []) in
+  tokens

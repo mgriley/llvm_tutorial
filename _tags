@@ -1,1 +1,2 @@
-<*>: package(batteries)
+<*>: package(batteries), package(llvm), use_llvm_analysis
+"test.ml": package(ounit)
