@@ -132,9 +132,9 @@ parse_expr (tokens: Lexer.token list) : (expr * Lexer.token list) =
   let (lhs, remaining) = parse_primary tokens in
   parse_binary_rhs 0 lhs remaining
 
-let parse_toplevel (tokens: Lexer.token list) : (func * Lexer.token list) = 
+let parse_toplevel (name : string) (tokens: Lexer.token list) : (func * Lexer.token list) = 
   let (ex, remaining) = parse_expr tokens in
-  let f = Function (Prototype ("", [||]), ex) in
+  let f = Function (Prototype (name, [||]), ex) in
   (f, remaining)
 
 (* Helpers *)
