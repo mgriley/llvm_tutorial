@@ -73,6 +73,15 @@ parse_function (tokens: Lexer.token list) : (func * Lexer.token list) =
   | _ -> failwith "Incorrect function format"
 and
 (*
+  Parse an extern *)
+parse_extern (tokens: Lexer.token list) : (proto * Lexer.token list) =
+  match tokens with
+  | Lexer.Extern :: tl ->
+      let (proto, remaining) = parse_prototype tl in
+      (proto, remaining)
+  | _ -> failwith "incorrect extern format"
+and
+(*
   Parse a function call, with the first token being the function name
  *)
 parse_call (tokens: Lexer.token list) : (expr * Lexer.token list) =
@@ -160,9 +169,10 @@ let string_of_proto (p: proto) : string =
   let combine = fun e acc -> (e ^ " " ^ acc) in
   match p with
   | Prototype (name, args) -> name ^ " " ^ (Array.fold_right combine args "")
-;;
 
 let string_of_func (f : func) : string = 
   match f with
   | Function (proto, expr) -> "def " ^ string_of_proto proto ^ " -> " ^ (string_of_expr expr)
-;;
+
+let string_of_extern (p : proto) : string =
+  "extern " ^ (string_of_proto p)

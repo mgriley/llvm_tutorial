@@ -76,7 +76,7 @@ let codegen_proto (proto : Ast.proto) : Llvm.llvalue =
       ) (Llvm.params f);
       f
 
-let codegen_func (fpm) (func : Ast.func) : Llvm.llvalue =
+let codegen_func (func : Ast.func) : Llvm.llvalue =
   match func with
   | Ast.Function (proto, body) ->
       (* clear the table, which has variable names from the last function call *)
@@ -94,8 +94,9 @@ let codegen_func (fpm) (func : Ast.func) : Llvm.llvalue =
         Llvm_analysis.assert_valid_function func_value;
 
         (* optimize the function *)
-        let modified_module = Llvm.PassManager.run_function func_value fpm in 
-        if modified_module then () else print_endline "passes didn't modify module";
+        (* TODO: no longer running the pass manager on a function by function basis *)
+        (*let modified_module = Llvm.PassManager.run_function func_value fpm in *)
+        (*if modified_module then () else print_endline "passes didn't modify module";*)
 
         func_value
       with e -> 
