@@ -3,6 +3,7 @@ type expr =
     | Variable of string
     | Binary of char * expr * expr
     | Call of string * expr array
+    | If of expr * expr * expr
 
 (* Description of a function. Takes the name and the argument names *)
 type proto = Prototype of string * string array
@@ -56,10 +57,36 @@ let rec parse_primary (tokens: Lexer.token list) : (expr * Lexer.token list) =
       | Lexer.Kwd ')' :: tl_b -> (expr, tl_b)
       | _ -> failwith "expected a ')'"
       end
+  | Lexer.If :: tl -> parse_if tokens
   | Lexer.Kwd c :: tl -> failwith ("did not expect char " ^ Batteries.String.of_char c)
   | Lexer.Extern :: tl -> failwith "not expecting extern"
   | Lexer.Def :: tl -> failwith "not expected def"
+  | hd :: tl -> failwith ("unexpected token when parsing primary: " ^ (Lexer.string_of_token hd))
 and 
+(* 
+ Parse an if-then-else
+*)
+parse_if (tokens : Lexer.token list) : (expr * Lexer.token list) =
+  begin
+  match tokens with
+  | Lexer.If :: tl ->
+      let (cond, remaining) = parse_expr tl in
+      begin
+      match remaining with
+      | Lexer.Then :: tl -> 
+          let (exprTrue, remaining) = parse_expr tl in
+          begin
+          match remaining with
+          | Lexer.Else :: tl -> 
+              let (exprFalse, remaining) = parse_expr tl in
+              (If (cond, exprTrue, exprFalse), remaining)
+          | _ -> failwith "expected 'else'"
+          end
+      | _ -> failwith "expected 'then'"
+      end
+  | _ -> failwith "expected 'if'"
+  end
+and
 (*
   Parse a function (starting with def)
  *)
@@ -163,6 +190,11 @@ let rec string_of_expr (e : expr) =
       in
       let args_string = List.fold_left combine "" (Array.to_list exprs) in
       "Call " ^ name ^ " with " ^ args_string
+  | If (cond, expTrue, expFalse) ->
+      let cond_str = string_of_expr cond in
+      let a_str = string_of_expr expTrue in
+      let b_str = string_of_expr expFalse in
+      "if " ^ cond_str ^ "\nthen " ^ a_str ^ "\nelse " ^ b_str
 ;;
 
 let string_of_proto (p: proto) : string =

@@ -9,6 +9,9 @@ type token =
     (* Primary *)
     | Ident of string | Number of float
 
+    (* If/then/else and for/in *)
+    | If | Then | Else | For | In
+
     (* unknown, aka keyword *)
     | Kwd of char
 ;;
@@ -20,6 +23,11 @@ let string_of_token (t : token) : string =
     | Ident s -> ("Ident " ^ s)
     | Number n -> ("Number " ^ Batteries.String.of_float n)
     | Kwd c -> ("Other token " ^ Batteries.String.of_char c)
+    | If -> "if"
+    | Then -> "then"
+    | Else -> "else"
+    | For -> "for"
+    | In -> "in"
 ;;
 
 (* parse until the end of the line *)
@@ -49,9 +57,15 @@ let parse_ident (file_chars : char list) (ident_name: string) : (token * char li
     in
     let tok_str, updated_list = helper file_chars ident_name in
     let tok = 
-    if tok_str = "def" then Def
-    else if tok_str = "extern" then Extern
-    else Ident tok_str
+      match tok_str with
+      | "def" -> Def
+      | "extern" -> Extern
+      | "if" -> If
+      | "then" -> Then
+      | "else" -> Else
+      | "for" -> For
+      | "in" -> In
+      | _ -> Ident tok_str
     in 
     (tok, updated_list)
 ;;

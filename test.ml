@@ -86,6 +86,10 @@ let def_with_parens test_ctxt =
   let file_name = get_test_file "def foo()" test_ctxt in
   token_check [Lexer.Def; Lexer.Ident "foo"; Lexer.Kwd '('; Lexer.Kwd ')'] (Lexer.tokenize_file file_name) test_ctxt
 
+let neg_arg test_ctxt =
+  let file_name = get_test_file "foo(-1)" test_ctxt in
+  token_check [Lexer.Ident "foo"; Lexer.Kwd '('; Lexer.Number (-1.0); Lexer.Kwd ')'] (Lexer.tokenize_file file_name)  test_ctxt
+
 (* AST Tests *)
 
 let parse_proto_noargs test_ctxt = 
@@ -200,6 +204,13 @@ let binary_low_peak test_ctxt =
   assert_equal ~ctxt:test_ctxt ~printer:Ast.string_of_expr expected expr;
   assert_equal ~ctxt:test_ctxt ~printer:string_of_tokens [Lexer.Ident "foo"] remaining
 
+let if_test test_ctxt =
+  let tokens = [Lexer.If; Lexer.Number 0.0; Lexer.Then; Lexer.Number 1.0; Lexer.Else; Lexer.Number 2.0; Lexer.Ident "foo"] in
+  let (expr, remaining) = Ast.parse_expr tokens in
+  let expected = Ast.If (Ast.Number 0.0, Ast.Number 1.0, Ast.Number 2.0) in
+  assert_equal ~ctxt:test_ctxt ~printer:Ast.string_of_expr expected expr;
+  assert_equal ~ctxt:test_ctxt ~printer:string_of_tokens [Lexer.Ident "foo"] remaining
+
 let suite = 
   "suite">:::
     [
@@ -216,6 +227,7 @@ let suite =
       "ident with trailing num" >:: ident_with_trailing_num;
       "ident with leading num" >:: ident_with_leading_num;
       "function def no spaces until parens" >:: def_with_parens;
+      "pass negative double as an arg" >:: neg_arg;
       "parse proto no args" >:: parse_proto_noargs;
       "parse proto one arg" >:: parse_proto_single_arg;
       "parse proto multi args" >:: parse_proto_multiple_args;
@@ -230,7 +242,8 @@ let suite =
       "parse binary expr, high plateau" >:: binary_high_plateau;
       "parse binary expr, low plateau" >:: binary_low_plateau;
       "parse binary expr, high peak" >:: binary_high_peak;
-      "parse binary expr, low peak" >:: binary_low_peak
+      "parse binary expr, low peak" >:: binary_low_peak;
+      "parse if-then-else expr" >:: if_test
     ];
 ;;
 

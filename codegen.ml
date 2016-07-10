@@ -14,6 +14,50 @@ let rec codegen_expr (ex : Ast.expr) : Llvm.llvalue =
       try Hashtbl.find named_values name
       with Not_found -> raise (Error ("unknown variable name " ^ name))
       end
+  | Ast.If (cond, expTrue, expFalse) ->
+      let cond_val = codegen_expr cond in
+      let zero = Llvm.const_float double_type 0.0 in
+      (* ordered (neighter arg NAN), not-equal comparison *)
+      let comparison = Llvm.build_fcmp Llvm.Fcmp.One cond_val zero "ifcond" builder in
+      
+      (* get the block that we inserted the comparison into, aka current block *)
+      let start_bb = Llvm.insertion_block builder in
+      (* get ref to function we are in *)
+      let current_func = Llvm.block_parent start_bb in
+
+      (* emit 'then' value *)
+      let then_bb = Llvm.append_block context "then" current_func in
+      Llvm.position_at_end then_bb builder;
+      let then_val = codegen_expr expTrue in
+      (* generation of the 'then' could have changed current block, get new block *)
+      let new_then_bb = Llvm.insertion_block builder in
+
+      (* emit 'else' value *)
+      let else_bb = Llvm.append_block context "else" current_func in
+      Llvm.position_at_end else_bb builder;
+      let else_val = codegen_expr expFalse in
+      let new_else_bb = Llvm.insertion_block builder in (* see comment above *)
+
+      (* emit merge block *)
+      let merge_bb = Llvm.append_block context "ifcont" current_func in
+      Llvm.position_at_end merge_bb builder;
+      let incoming = [(then_val, new_then_bb); (else_val, new_else_bb)] in
+      let phi = Llvm.build_phi incoming "iftmp" builder in
+
+      (* return to start block to add the conditional branch to other blocks *)
+      Llvm.position_at_end start_bb builder;
+      let _ = Llvm.build_cond_br comparison then_bb else_bb builder in
+
+      (* branch from ends of 'then' and 'else' blocks to 'merge' block *)
+      Llvm.position_at_end new_then_bb builder;
+      let _ = Llvm.build_br merge_bb builder in
+      Llvm.position_at_end new_else_bb builder;
+      let _ = Llvm.build_br merge_bb builder in
+
+      (* position the builder at the end of the merge block, where construction will continue *)
+      Llvm.position_at_end merge_bb builder;
+
+      phi
   | Ast.Binary (op, lhs, rhs) ->
       let lhs_val = codegen_expr lhs in
       let rhs_val = codegen_expr rhs in
