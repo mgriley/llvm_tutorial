@@ -12,13 +12,13 @@ ocamlfind ocamldep -package batteries -package llvm -package ctypes -package cty
 # Target: ast.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:ast.cmo, file:ast.ml, implem, ocaml, package(batteries), package(ctypes), package(ctypes.foreign), package(llvm), quiet, traverse, use_llvm_analysis, use_llvm_executionengine, use_llvm_scalar_opts, use_llvm_target }
 ocamlfind ocamlc -c -g -package batteries -package llvm -package ctypes -package ctypes.foreign -o ast.cmo ast.ml # cached
 # Target: codegen.ml.depends, tags: { debug, extension:ml, file:codegen.ml, ocaml, ocamldep, package(batteries), package(ctypes), package(ctypes.foreign), package(llvm), quiet, traverse, use_llvm_analysis, use_llvm_executionengine, use_llvm_scalar_opts, use_llvm_target }
-ocamlfind ocamldep -package batteries -package llvm -package ctypes -package ctypes.foreign -modules codegen.ml > codegen.ml.depends # cached
+ocamlfind ocamldep -package batteries -package llvm -package ctypes -package ctypes.foreign -modules codegen.ml > codegen.ml.depends
 # Target: codegen.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:codegen.cmo, file:codegen.ml, implem, ocaml, package(batteries), package(ctypes), package(ctypes.foreign), package(llvm), quiet, traverse, use_llvm_analysis, use_llvm_executionengine, use_llvm_scalar_opts, use_llvm_target }
-ocamlfind ocamlc -c -g -package batteries -package llvm -package ctypes -package ctypes.foreign -o codegen.cmo codegen.ml # cached
+ocamlfind ocamlc -c -g -package batteries -package llvm -package ctypes -package ctypes.foreign -o codegen.cmo codegen.ml
 # Target: toplevel.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:toplevel.cmo, file:toplevel.ml, implem, ocaml, package(batteries), package(ctypes), package(ctypes.foreign), package(llvm), quiet, traverse, use_llvm_analysis, use_llvm_executionengine, use_llvm_scalar_opts, use_llvm_target }
-ocamlfind ocamlc -c -g -package batteries -package llvm -package ctypes -package ctypes.foreign -o toplevel.cmo toplevel.ml # cached
+ocamlfind ocamlc -c -g -package batteries -package llvm -package ctypes -package ctypes.foreign -o toplevel.cmo toplevel.ml
 # Target: main.cmo, tags: { byte, compile, debug, extension:cmo, extension:ml, file:main.cmo, file:main.ml, implem, ocaml, package(batteries), package(ctypes), package(ctypes.foreign), package(llvm), quiet, traverse, use_llvm_analysis, use_llvm_executionengine, use_llvm_scalar_opts, use_llvm_target }
-ocamlfind ocamlc -c -g -package batteries -package llvm -package ctypes -package ctypes.foreign -o main.cmo main.ml # cached
+ocamlfind ocamlc -c -g -package batteries -package llvm -package ctypes -package ctypes.foreign -o main.cmo main.ml
 # Target: main.byte, tags: { byte, debug, dont_link_with, extension:byte, file:main.byte, link, ocaml, package(batteries), package(ctypes), package(ctypes.foreign), package(llvm), program, quiet, traverse, use_llvm_analysis, use_llvm_executionengine, use_llvm_scalar_opts, use_llvm_target }
-ocamlfind ocamlc llvm_analysis.cma llvm_executionengine.cma llvm_target.cma llvm_scalar_opts.cma -linkpkg -g -package batteries -package llvm -package ctypes -package ctypes.foreign lexer.cmo ast.cmo codegen.cmo toplevel.cmo main.cmo -o main.byte # cached
+ocamlfind ocamlc llvm_analysis.cma llvm_executionengine.cma llvm_target.cma llvm_scalar_opts.cma -linkpkg -g -package batteries -package llvm -package ctypes -package ctypes.foreign lexer.cmo ast.cmo codegen.cmo toplevel.cmo main.cmo -o main.byte
 # Compilation successful.

@@ -1,0 +1,166 @@
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:1:single num test.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-b13084-Matthews-MacBook-Pro-2.local#02.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Number 3.4
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Number 3.4
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:1:single num test is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-b13084-Matthews-MacBook-Pro-2.local#02.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:1:single num test.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:3:single extern test.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-e76ffb-Matthews-MacBook-Pro-2.local#02.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  extern
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  extern
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:3:single extern test is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-e76ffb-Matthews-MacBook-Pro-2.local#02.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:3:single extern test.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:6:ignore comment line.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-c30333-Matthews-MacBook-Pro-2.local#02.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  def
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  def
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:6:ignore comment line is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-c30333-Matthews-MacBook-Pro-2.local#02.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:6:ignore comment line.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:8:ident in parens.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-8b878c-Matthews-MacBook-Pro-2.local#02.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Other token ( Ident foo Other token )
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Other token ( Ident foo Other token )
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:8:ident in parens is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-8b878c-Matthews-MacBook-Pro-2.local#02.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:8:ident in parens.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:11:ident with leading num.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-fd4f0b-Matthews-MacBook-Pro-2.local#02.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Number 2. Ident chainz
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Number 2. Ident chainz
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:11:ident with leading num is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-fd4f0b-Matthews-MacBook-Pro-2.local#02.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:11:ident with leading num.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:12:function def no spaces until parens.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-86bac1-Matthews-MacBook-Pro-2.local#02.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  def Ident foo Other token ( Other token )
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  def Ident foo Other token ( Other token )
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:12:function def no spaces until parens is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-86bac1-Matthews-MacBook-Pro-2.local#02.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:12:function def no spaces until parens.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:14:parse proto no args.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: sq 
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: sq 
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:14:parse proto no args is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:14:parse proto no args.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:15:parse proto one arg.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: sq my_var 
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: sq my_var 
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:15:parse proto one arg is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:15:parse proto one arg.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:16:parse proto multi args.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: sq a b 
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: sq a b 
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:16:parse proto multi args is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:16:parse proto multi args.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:17:parse func no args.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: def foo  -> 1.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: def foo  -> 1.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:17:parse func no args is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:17:parse func no args.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:18:parse call one arg.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: Call one with 1. 
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: Call one with 1. 
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:18:parse call one arg is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:18:parse call one arg.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:19:parse call two args.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: Call one with 1. 2. 
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: Call one with 1. 2. 
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:19:parse call two args is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:19:parse call two args.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:20:parse binary expr single term.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: 1.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: 1.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Ident ha
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Ident ha
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:20:parse binary expr single term is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:20:parse binary expr single term.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:21:parse binary expr two terms.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: (+, a, b)
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: (+, a, b)
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Ident c
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Ident c
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:21:parse binary expr two terms is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:21:parse binary expr two terms.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:22:parse binary expr. three terms, increasing precedence.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: (+, a, (*, b, c))
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: (+, a, (*, b, c))
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Ident d
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Ident d
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:22:parse binary expr. three terms, increasing precedence is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:22:parse binary expr. three terms, increasing precedence.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:23:parse binary expr. three terms, decreasing precedence.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: (+, (*, a, b), c)
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: (+, (*, a, b), c)
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Ident d
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Ident d
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:23:parse binary expr. three terms, decreasing precedence is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:23:parse binary expr. three terms, decreasing precedence.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:24:parse binary expr. three terms, increasing precedence.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: (+, a, (+, b, c))
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: (+, a, (+, b, c))
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Ident d
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Ident d
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:24:parse binary expr. three terms, increasing precedence is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:24:parse binary expr. three terms, increasing precedence.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:25:parse binary expr, high plateau.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: (+, a, (*, b, (*, c, d)))
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: (+, a, (*, b, (*, c, d)))
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:25:parse binary expr, high plateau is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:25:parse binary expr, high plateau.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:26:parse binary expr, low plateau.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: (+, (*, a, b), (+, c, d))
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: (+, (*, a, b), (+, c, d))
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:26:parse binary expr, low plateau is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:26:parse binary expr, low plateau.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:27:parse binary expr, high peak.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: (+, a, (+, (*, b, c), d))
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: (+, a, (+, (*, b, c), d))
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:27:parse binary expr, high peak is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:27:parse binary expr, high peak.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:28:parse binary expr, low peak.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: (+, (*, a, b), (*, c, d))
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: (+, (*, a, b), (*, c, d))
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:28:parse binary expr, low peak is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:28:parse binary expr, low peak.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:29:parse if-then-else expr.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: if 0.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: then 1.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: else 2.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: if 0.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: then 1.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: else 2.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:29:parse if-then-else expr is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:29:parse if-then-else expr.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:30:parse full for-loop expr.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: for i = 0., (<, i, 10.), 3.: 2.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: for i = 0., (<, i, 10.), 3.: 2.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:30:parse full for-loop expr is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:30:parse full for-loop expr.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Start test suite:31:parse partial (implied 1.0 increment) for-loop expr.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected: for i = 0., (<, i, 10.): 2.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual: for i = 0., (<, i, 10.): 2.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Expected:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Actual:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: Test suite:31:parse partial (implied 1.0 increment) for-loop expr is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#02 I: End test suite:31:parse partial (implied 1.0 increment) for-loop expr.

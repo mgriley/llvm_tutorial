@@ -4,6 +4,7 @@ type expr =
     | Binary of char * expr * expr
     | Call of string * expr array
     | If of expr * expr * expr
+    | For of string * expr * expr * expr option * expr
 
 (* Description of a function. Takes the name and the argument names *)
 type proto = Prototype of string * string array
@@ -58,11 +59,42 @@ let rec parse_primary (tokens: Lexer.token list) : (expr * Lexer.token list) =
       | _ -> failwith "expected a ')'"
       end
   | Lexer.If :: tl -> parse_if tokens
+  | Lexer.For :: tl -> parse_for tokens
   | Lexer.Kwd c :: tl -> failwith ("did not expect char " ^ Batteries.String.of_char c)
   | Lexer.Extern :: tl -> failwith "not expecting extern"
   | Lexer.Def :: tl -> failwith "not expected def"
   | hd :: tl -> failwith ("unexpected token when parsing primary: " ^ (Lexer.string_of_token hd))
 and 
+(*
+Parse an for-in
+*)
+parse_for (tokens : Lexer.token list) : (expr * Lexer.token list) =
+  let parse_init (tokens : Lexer.token list) :  (string * expr * Lexer.token list) =
+    match tokens with
+    | Lexer.For :: Lexer.Ident s :: Lexer.Kwd '=' :: tl ->
+        let (init_expr, remaining) = parse_expr tl in
+        (s, init_expr, remaining)
+    | _ -> failwith "error in parsing first segment of for loop"
+  in 
+  let parse_end_cond (tokens : Lexer.token list) : (expr * Lexer.token list) =
+    match tokens with
+    | Lexer.Kwd ',' :: tl -> parse_expr tl
+    | _ -> failwith "expected ',' after initialize segment of for-loop"
+  in
+  let parse_inc_expr (tokens : Lexer.token list) : (expr option * Lexer.token list) = 
+    match tokens with 
+    | Lexer.Kwd ',' :: tl -> 
+        let (expr, remaining) = parse_expr tl in
+        (Some expr, remaining)
+    | _ -> (None, tokens)
+  in
+  let (inc_name, init_expr, remaining) = parse_init tokens in
+  let (end_cond, remaining) = parse_end_cond remaining in
+  let (opt_inc_expr, remaining) = parse_inc_expr remaining in
+  let (body_expr, remaining) = parse_expr remaining in
+  let expr = For (inc_name, init_expr, end_cond, opt_inc_expr, body_expr) in
+  (expr, remaining)
+and     
 (* 
  Parse an if-then-else
 *)
@@ -195,6 +227,12 @@ let rec string_of_expr (e : expr) =
       let a_str = string_of_expr expTrue in
       let b_str = string_of_expr expFalse in
       "if " ^ cond_str ^ "\nthen " ^ a_str ^ "\nelse " ^ b_str
+  | For (ident, init_expr, end_cond, opt_inc_expr, body_expr) ->
+      let init_str = string_of_expr init_expr in
+      let end_str = string_of_expr end_cond in
+      let inc_str = match opt_inc_expr with | None -> "" | Some e -> (", " ^ string_of_expr e) in
+      let body_str = string_of_expr body_expr in
+      "for " ^ ident ^ " = " ^ init_str ^ ", " ^ end_str ^ inc_str ^ ": " ^ body_str 
 ;;
 
 let string_of_proto (p: proto) : string =

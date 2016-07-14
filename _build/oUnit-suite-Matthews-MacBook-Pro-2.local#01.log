@@ -1,0 +1,62 @@
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Start test suite:0:empty file test.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-8016a6-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Expected: 
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Actual: 
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Test suite:0:empty file test is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-8016a6-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: End test suite:0:empty file test.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Start test suite:2:single def test.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-8e894b-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Expected:  def
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Actual:  def
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Test suite:2:single def test is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-8e894b-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: End test suite:2:single def test.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Start test suite:4:single ident test.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-7b933d-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Expected:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Actual:  Ident foo
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Test suite:4:single ident test is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-7b933d-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: End test suite:4:single ident test.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Start test suite:5:single keyword test.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-e7b617-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Expected:  Other token (
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Actual:  Other token (
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Test suite:5:single keyword test is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-e7b617-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: End test suite:5:single keyword test.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Start test suite:7:num ending in zero.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-68e427-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Expected:  Number 3.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Actual:  Number 3.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Test suite:7:num ending in zero is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-68e427-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: End test suite:7:num ending in zero.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Start test suite:9:number in parens.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-6ec939-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Expected:  Other token ( Number 2. Other token )
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Actual:  Other token ( Number 2. Other token )
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Test suite:9:number in parens is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-6ec939-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: End test suite:9:number in parens.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Start test suite:10:ident with trailing num.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-78158c-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Expected:  Ident abc1
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Actual:  Ident abc1
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Test suite:10:ident with trailing num is successful.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-78158c-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: End test suite:10:ident with trailing num.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Start test suite:13:pass negative double as an arg.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Created a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-f3ee73-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Expected:  Ident foo Other token ( Number -1. Other token )
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 I: Actual:  Ident foo Other token ( Other token - Number 1. Other token )
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 E: Test suite:13:pass negative double as an arg has failed.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 E: expected:  Ident foo Other token ( Number -1. Other token )
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 E: but got:  Ident foo Other token ( Other token - Number 1. Other token ) in test suite:13:pass negative double as an arg.
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 E: Raised at file "src/oUnitAssert.ml", line 45, characters 8-27
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 E: Called from file "test.ml", line 19, characters 2-67
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 E: Called from file "src/oUnitRunner.ml", line 46, characters 13-26
+2016-07-13T00:28:01+00:00 Matthews-MacBook-Pro-2.local#01 E: 
+2016-07-13T00:28:02+00:00 Matthews-MacBook-Pro-2.local#01 I: Removed a temporary file: "/var/folders/l3/z45trqb550509wh51ydxj61h0000gn/T/ounit-f3ee73-Matthews-MacBook-Pro-2.local#01.txt".
+2016-07-13T00:28:02+00:00 Matthews-MacBook-Pro-2.local#01 I: End test suite:13:pass negative double as an arg.

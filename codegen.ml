@@ -17,7 +17,7 @@ let rec codegen_expr (ex : Ast.expr) : Llvm.llvalue =
   | Ast.If (cond, expTrue, expFalse) ->
       let cond_val = codegen_expr cond in
       let zero = Llvm.const_float double_type 0.0 in
-      (* ordered (neighter arg NAN), not-equal comparison *)
+      (* ordered (neither arg NAN), not-equal comparison *)
       let comparison = Llvm.build_fcmp Llvm.Fcmp.One cond_val zero "ifcond" builder in
       
       (* get the block that we inserted the comparison into, aka current block *)
@@ -58,6 +58,70 @@ let rec codegen_expr (ex : Ast.expr) : Llvm.llvalue =
       Llvm.position_at_end merge_bb builder;
 
       phi
+  | Ast.For (ident, init_expr, end_expr, opt_inc_expr, body_expr) ->
+
+      let start_val = codegen_expr init_expr in
+      let current_bb = Llvm.insertion_block builder in
+      let current_func = Llvm.block_parent current_bb in
+      let loop_bb = Llvm.append_block context "loop" current_func in
+
+      (* explicity fall-through from current block to loop block *)
+      let _ = Llvm.build_br loop_bb builder in
+
+      (* Start inserting into the loop building block *)
+      Llvm.position_at_end loop_bb builder;
+
+      (* phi node is the init expr if first iteration, otherwise (we will specify later) it is the updated value of the loop var *)
+      (* by passing it the loop-var name, we say that the loop-var is this phi node *)
+      let variable = Llvm.build_phi [(start_val, current_bb)] ident builder in
+
+      (* ensure that the loop-var doesn't have the same name as any of the other variables *)
+      (* we could allow shadowing, but shadowing can result in confusion *)
+      let exists = 
+        try
+          let _ = Hashtbl.find named_values ident in
+          true
+        with Not_found -> false 
+      in
+      if exists 
+      then (failwith ("Variable " ^ ident ^ " already exists in outer scope. No shadowing allowed."))
+      else (Hashtbl.add named_values ident variable);
+      
+      (* emit body code *)
+      let _ = codegen_expr body_expr in
+
+      (* emit increment/step expression *)
+      let inc_val = 
+        match opt_inc_expr with
+        | None -> Llvm.const_float double_type 1.0 (* use 1.0 if not specified *)
+        | Some exp -> codegen_expr exp
+      in
+
+      (* add the increment expression to the loop variable *)
+      let next_var = Llvm.build_fadd variable inc_val "nextvar" builder in
+      
+      (* emit end condition *)
+      let end_cond_val = codegen_expr end_expr in
+      let zero = Llvm.const_float double_type 0.0 in
+      (* compare the end condition to 0.0 (that is, branch if true) *)
+      let comparison = Llvm.build_fcmp Llvm.Fcmp.One end_cond_val zero "loopcond" builder in
+
+      (* compute the after-loop *)
+      let loop_end_bb = Llvm.insertion_block builder in
+      (* create the next block (this doesn't yet move the builder though) *)
+      let after_loop_bb = Llvm.append_block context "afterloop" current_func in
+      (* if true, branch to loop_bb, otherwise branch to after_loop_bb *)
+      let _ = Llvm.build_cond_br comparison loop_bb after_loop_bb builder in
+
+      (* start positioning into the block after the for loop *)
+      Llvm.position_at_end after_loop_bb builder;
+
+      (* add another entry point to the phi node, now that we have updated the loop-var *)
+      Llvm.add_incoming (next_var, loop_end_bb) variable;
+
+      (* the expression for the for-loop is always 0 *)
+      Llvm.const_float double_type 0.0
+
   | Ast.Binary (op, lhs, rhs) ->
       let lhs_val = codegen_expr lhs in
       let rhs_val = codegen_expr rhs in

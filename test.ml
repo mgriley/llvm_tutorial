@@ -211,6 +211,34 @@ let if_test test_ctxt =
   assert_equal ~ctxt:test_ctxt ~printer:Ast.string_of_expr expected expr;
   assert_equal ~ctxt:test_ctxt ~printer:string_of_tokens [Lexer.Ident "foo"] remaining
 
+let full_for_loop_test test_ctxt = 
+  let tokens = [
+    Lexer.For; Lexer.Ident "i"; Lexer.Kwd '='; Lexer.Number 0.0; Lexer.Kwd ','; 
+    Lexer.Ident "i"; Lexer.Kwd '<'; Lexer.Number 10.0; Lexer.Kwd ','; Lexer.Number 3.0;
+    Lexer.Number 2.0; Lexer.Ident "foo"
+  ] in
+  let (expr, remaining) = Ast.parse_expr tokens in
+  let end_cond = Ast.Binary ('<', Ast.Variable "i", Ast.Number 10.0) in
+  let inc_expr = Some (Ast.Number 3.0) in
+  let body_expr = Ast.Number 2.0 in
+  let expected = Ast.For ("i", Ast.Number 0.0, end_cond, inc_expr, body_expr) in
+  assert_equal ~ctxt:test_ctxt ~printer:Ast.string_of_expr expected expr;
+  assert_equal ~ctxt:test_ctxt ~printer:string_of_tokens [Lexer.Ident "foo"] remaining
+
+let partial_for_loop_test test_ctxt =
+  let tokens = [
+    Lexer.For; Lexer.Ident "i"; Lexer.Kwd '='; Lexer.Number 0.0; Lexer.Kwd ','; 
+    Lexer.Ident "i"; Lexer.Kwd '<'; Lexer.Number 10.0;
+    Lexer.Number 2.0; Lexer.Ident "foo"
+  ] in
+  let (expr, remaining) = Ast.parse_expr tokens in
+  let end_cond = Ast.Binary ('<', Ast.Variable "i", Ast.Number 10.0) in
+  let inc_expr = None in
+  let body_expr = Ast.Number 2.0 in
+  let expected = Ast.For ("i", Ast.Number 0.0, end_cond, inc_expr, body_expr) in
+  assert_equal ~ctxt:test_ctxt ~printer:Ast.string_of_expr expected expr;
+  assert_equal ~ctxt:test_ctxt ~printer:string_of_tokens [Lexer.Ident "foo"] remaining
+
 let suite = 
   "suite">:::
     [
@@ -243,7 +271,9 @@ let suite =
       "parse binary expr, low plateau" >:: binary_low_plateau;
       "parse binary expr, high peak" >:: binary_high_peak;
       "parse binary expr, low peak" >:: binary_low_peak;
-      "parse if-then-else expr" >:: if_test
+      "parse if-then-else expr" >:: if_test;
+      "parse full for-loop expr" >:: full_for_loop_test;
+      "parse partial (implied 1.0 increment) for-loop expr" >:: partial_for_loop_test
     ];
 ;;
 
